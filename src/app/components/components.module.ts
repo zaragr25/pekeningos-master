@@ -5,6 +5,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FosUserComponent } from './fos-user/fos-user.component';
+import { ClientesComponent } from './clientes/clientes.component';
+import { ProductosComponent } from './productos/productos.component';
+import { BoletosComponent } from './boletos/boletos.component';
+import { OrdenesComponent } from './ordenes/ordenes.component';
+import { BoletosVentaComponent } from './boletos-venta/boletos-venta.component';
+import { ValidaClienteComponent } from './valida-cliente/valida-cliente.component';
+import { RegistroClienteComponent } from './registro-cliente/registro-cliente.component';
+import { ResumenVentaComponent } from './resumen-venta/resumen-venta.component';
+import { ValidaOrdenComponent } from './valida-orden/valida-orden.component';
+import { PagoBoletosComponent } from './pago-boletos/pago-boletos.component';
+import { ProductosVentaComponent } from './productos-venta/productos-venta.component';
 
 @NgModule({
   imports: [
@@ -15,7 +27,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     FooterComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    FosUserComponent,
+    ClientesComponent,
+    ProductosComponent,
+    BoletosComponent,
+    OrdenesComponent,
+    BoletosVentaComponent,
+    ValidaClienteComponent,
+    RegistroClienteComponent,
+    ResumenVentaComponent,
+    ValidaOrdenComponent,
+    PagoBoletosComponent,
+    ProductosVentaComponent
   ],
   exports: [
     FooterComponent,

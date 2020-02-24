@@ -1,0 +1,156 @@
+<!-- Page content -->
+<div class="container py-7 py-lg-8">
+  <div class="row justify-content-center align-content-center">
+    <div class="col-md-12">
+      <img
+        class="img-fluid rounded mx-auto d-block pb-5 img-pres"
+        src="../../../assets/img/brand/logo-pekeningos.png"
+        alt="Logotipo de pequeñingos"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto pt-4 pb-4">
+            <div class="form-group mb-0" [ngClass]="{ 'focused': focus === true }">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-barcode"></i></span>
+                </div>
+                <input class="form-control" placeholder="Código de producto" type="text" (focus)="focus = true"
+                (blur)="focus = false">
+              </div>
+            </div>
+          </form>
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto pt-4 pb-4">
+            <div class="form-group mb-0" [ngClass]="{ 'focused': focus === true }">
+              <div class="input-group input-group-alternative">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input class="form-control" placeholder="Buscar" type="text" (focus)="focus = true"
+                (blur)="focus = false">
+              </div>
+            </div>
+          </form>
+      <form role="form">
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-4">
+            <div class="card bg-secondary shadow border-0">
+              <img
+                class="card-img-top"
+                src="../../../assets/img/modulo1-clientes/dummy-boletos.jpg"
+                alt="Paquete 2"
+              />
+              <div class="card-body px-lg-3 py-lg-3">
+                <p class="card-text">
+                 Coca-cola
+                </p>
+              </div>
+            </div>
+            <div class="row pt-4 justify-content-center">
+              <div class="col-md-4">
+                <button
+                  type="button"
+                  class="btn btn-text text-white font-weight-600"
+                  (click)="minus()"
+                >
+                  <i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" [value]="cantidad" />
+              </div>
+              <div class="col-md-4">
+                <button
+                  type="button"
+                  class="btn btn-text text-white font-weight-600"
+                  (click)="plus()"
+                >
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-secondary shadow border-0">
+              <img
+                class="card-img-top"
+                src="../../../assets/img/modulo1-clientes/dummy-boletos.jpg"
+                alt="Paquete 3"
+              />
+              <div class="card-body px-lg-3 py-lg-3">
+                <p class="card-text">
+                  Pizza hawaiana
+                </p>
+              </div>
+            </div>
+            <div class="row pt-4 justify-content-center">
+              <div class="col-md-4">
+                <button
+                  type="button"
+                  class="btn btn-text text-white font-weight-600"
+                  (click)="minus()"
+                >
+                  <i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" [value]="cantidad" />
+              </div>
+              <div class="col-md-4">
+                <button
+                  type="button"
+                  class="btn btn-text text-white font-weight-600"
+                  (click)="plus()"
+                >
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-secondary shadow border-0">
+              <img
+                class="card-img-top"
+                src="../../../assets/img/modulo1-clientes/dummy-boletos.jpg"
+                alt="Individual"
+              />
+              <div class="card-body px-lg-3 py-lg-3">
+                <p class="card-text">
+                 Hot-dog
+                </p>
+              </div>
+            </div>
+            <div class="row pt-4 justify-content-center">
+              <div class="col-md-4">
+                <button
+                  type="button"
+                  class="btn btn-text text-white font-weight-600"
+                  (click)="minus()"
+                >
+                  <i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" [value]="cantidad" />
+              </div>
+              <div class="col-md-4">
+                <button
+                  type="button"
+                  class="btn btn-text text-white font-weight-600"
+                  (click)="plus()"
+                >
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+        <app-pago-boletos></app-pago-boletos>
+    </div>
+  </div>
+</div>
