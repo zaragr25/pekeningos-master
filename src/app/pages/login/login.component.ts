@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { FosUserService } from '../../services/fos-user.service';
 
 @Component({
   selector: 'app-login',
@@ -6,7 +7,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit, OnDestroy {
-  constructor() {}
+  constructor(private _FosUserService: FosUserService,) {}
 
   ngOnInit() {
   }

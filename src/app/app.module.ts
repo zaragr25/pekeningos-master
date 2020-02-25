@@ -14,6 +14,14 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 
 
+//Servicios
+
+import { FosUserService } from './services/fos-user.service';
+import { ClientesService } from './services/clientes.service';
+import { ProductosService } from './services/productos.service';
+import { BoletosService } from './services/boletos.service';
+import { OrdenesService } from './services/ordenes.service';
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -29,7 +37,13 @@ import { ComponentsModule } from './components/components.module';
     AdminLayoutComponent,
     AuthLayoutComponent
   ],
-  providers: [],
+  providers: [
+    FosUserService,
+    ClientesService,
+    ProductosService,
+    BoletosService,
+    OrdenesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
