@@ -5,13 +5,16 @@ import { OrdenesService } from '../../services/ordenes.service';
 @Component({
   selector: 'app-boletos-venta',
   templateUrl: './boletos-venta.component.html',
-  styleUrls: ['./boletos-venta.component.css']
+  styleUrls: ['./boletos-venta.component.css'],
+  providers: [ BoletosService, OrdenesService ]
 })
 export class BoletosVentaComponent implements OnInit {
 
   constructor(private _boletosService: BoletosService, private _ordenesService: OrdenesService) { }
 
   ngOnInit(): void {
+    console.log(this._boletosService.test());
+    console.log(this._ordenesService.test());
   }
 
   cantidad:number=1;
